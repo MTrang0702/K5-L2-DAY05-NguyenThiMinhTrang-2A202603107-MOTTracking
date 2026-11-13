@@ -49,15 +49,15 @@ Người bị che: `P1`
 
 | Mốc | Frame |
 |---|---:|
-| Bắt đầu bị che một phần (bật `occluded`) | 29 |
-| Mất hẳn (bật `outside`) | 39 |
+| Bắt đầu bị che một phần (bật `occluded`) | 25 |
+| Mất hẳn (bật `outside`) | 41 |
 | Hiện lại (tắt `outside`) | 46 |
-| Thấy rõ trở lại (tắt `occluded`) | 60 |
+| Thấy rõ trở lại (tắt `occluded`) | 58 |
 
-- Thời gian khuất hẳn: 7 frame = 0.23 giây (thực tế outside từ frame 41–45).
-- Quyết định: Giữ cùng ID (Track ID 1).
+- Thời gian khuất hẳn: 5 frame = 0.17 giây (từ frame 41–45).
+- Quyết định: Giữ cùng ID (Track ID 2 trên CVAT ứng với P1).
 - Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
-  1. **Thời gian khuất so với ngưỡng 60 frame:** Đoạn mất hẳn chỉ kéo dài khoảng 5–7 frame (chưa đến 0.25 giây), ngắn hơn rất nhiều so với ngưỡng 60 frame (2 giây) theo quy định của lớp.
+  1. **Thời gian khuất so với ngưỡng 60 frame:** Đoạn mất hẳn chỉ kéo dài 5 frame (khoảng 0.17 giây), ngắn hơn rất nhiều so với ngưỡng 60 frame (2 giây) theo quy định của lớp.
   2. **Ngoại hình:** Hoàn toàn trùng khớp (vẫn là người đàn ông mặc áo len/nỉ đen đi bên trong cửa hàng Vodafone).
   3. **Hướng đi và tốc độ:** Vị trí tái xuất hiện ở frame 46 hoàn toàn khớp với hướng di chuyển thẳng từ trái sang phải với vận tốc không đổi. Do đó, việc duy trì cùng một Track ID là chính xác tuyệt đối.
 
